@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Elektrik Eel Festival website created as a DIG103 Interaction Design student project.">
+  <meta name="author" content="Jhon Cris Jimenez">
+  <title>Elektrik Eel Festival</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- DIG103 Assessment 2: Elektrik Eel homepage -->
+  <!-- The page follows the visual direction developed in Assessment 1. -->
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <!-- Header and main navigation -->
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Elektrik Eel home">
+      <span class="brand-mark">EE</span>
+      <span class="brand-name">ELEKTRIK EEL</span>
+    </a>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#artists">Lineup</a>
+      <a href="#shows">Nights</a>
+      <a href="#experience">Venue</a>
+      <a href="#tickets">Tickets</a>
+    </nav>
+
+    <a class="button button-small button-outline" href="#tickets">Get tickets</a>
+  </header>
+
+  <main id="main-content">
+    <!-- Main hero area -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-image" role="img" aria-label="Crowd dancing beneath green lasers at an underground electronic music event"></div>
+      <div class="hero-grain" aria-hidden="true"></div>
+
+      <div class="hero-content">
+        <p class="eyebrow">FIRST EDITION // DECEMBER 2026</p>
+        <h1 id="hero-title">ELEKTRIK<br>EEL.</h1>
+        <p class="hero-tagline">Three nights of underground house,<br>techno and hypnotic sound.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#tickets">Early-bird tickets</a>
+          <a class="text-link" href="#artists">View the lineup <span aria-hidden="true">↘</span></a>
+        </div>
+      </div>
+
+      <div class="hero-meta" aria-label="Festival details">
+        <span>19-21 DEC</span>
+        <span>AUSTRALIA</span>
+        <span>10PM-LATE</span>
+      </div>
+
+      <p class="vertical-label" aria-hidden="true">UNDERGROUND HOUSE / 2026 EDITION</p>
+    </section>
+
+    <!-- Short festival introduction -->
+    <section class="intro section-pad" aria-labelledby="intro-title">
+      <div>
+        <p class="section-number">01 / ABOUT</p>
+        <h2 id="intro-title">Music first.<br>All night.</h2>
+      </div>
+      <div class="intro-copy">
+        <p>Elektrik Eel is an Australian electronic music event focused on underground house and techno. The homepage gives visitors the lineup, city dates, venue atmosphere and a clear path to tickets.</p>
+        <p class="genre-line">ACID HOUSE / CHICAGO HOUSE / DEEP HOUSE / TRIBAL HOUSE / DARK ELECTRO / INDUSTRIAL</p>
+      </div>
+    </section>
+
+    <!-- Artist lineup using the supplied images -->
+    <section class="artists" id="artists" aria-labelledby="artists-title">
+      <div class="section-heading section-pad compact">
+        <p class="section-number">02 / ARTISTS</p>
+        <h2 id="artists-title">First wave<br>lineup.</h2>
+      </div>
+
+      <div class="artist-grid">
+        <article class="artist-card artist-card-featured">
+          <img src="images/artists/richie-hawtin.webp" alt="Richie Hawtin portrait" width="1200" height="675">
+          <div class="artist-overlay">
+            <p>CANADA / MINIMAL TECHNO</p>
+            <h3>Richie<br>Hawtin</h3>
+            <span class="card-index">01</span>
+          </div>
+        </article>
+
+        <article class="artist-card">
+          <img src="images/artists/robert-hood.webp" alt="Robert Hood performing at a DJ mixer" width="900" height="600">
+          <div class="artist-overlay">
+            <p>USA / DETROIT TECHNO</p>
+            <h3>Robert<br>Hood</h3>
+            <span class="card-index">02</span>
+          </div>
+        </article>
+
+        <article class="artist-card">
+          <img src="images/artists/surgeon.webp" alt="Surgeon performing with electronic music equipment" width="1272" height="897">
+          <div class="artist-overlay">
+            <p>UK / INDUSTRIAL</p>
+            <h3>Surgeon</h3>
+            <span class="card-index">03</span>
+          </div>
+        </article>
+
+        <article class="artist-card">
+          <img src="images/artists/oscar-mulero.webp" alt="Oscar Mulero performing at a DJ console" width="960" height="582">
+          <div class="artist-overlay">
+            <p>SPAIN / DARK TECHNO</p>
+            <h3>Oscar<br>Mulero</h3>
+            <span class="card-index">04</span>
+          </div>
+        </article>
+
+        <article class="artist-card artist-card-wide">
+          <img src="images/artists/robag-wruhme.webp" alt="Robag Wruhme performing to a large crowd" width="1000" height="667">
+          <div class="artist-overlay">
+            <p>GERMANY / DEEP HOUSE</p>
+            <h3>Robag<br>Wruhme</h3>
+            <span class="card-index">05</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Dates and city information -->
+    <section class="shows section-pad" id="shows" aria-labelledby="shows-title">
+      <div class="section-heading">
+        <p class="section-number">03 / THREE NIGHTS</p>
+        <h2 id="shows-title">Three cities.<br>Three nights.</h2>
+      </div>
+
+      <div class="show-list">
+        <article class="show-row">
+          <p class="show-date"><span>DEC</span>19</p>
+          <div class="show-city">
+            <p>THURSDAY / 10PM</p>
+            <h3>Brisbane</h3>
+          </div>
+          <p class="show-venue">The Family<br>Fortitude Valley</p>
+          <a class="circle-link" href="#tickets" aria-label="Buy tickets for Brisbane">↗</a>
+        </article>
+
+        <article class="show-row">
+          <p class="show-date"><span>DEC</span>20</p>
+          <div class="show-city">
+            <p>FRIDAY / 10PM</p>
+            <h3>Sydney</h3>
+          </div>
+          <p class="show-venue">S.A.S.H<br>CBD</p>
+          <a class="circle-link" href="#tickets" aria-label="Buy tickets for Sydney">↗</a>
+        </article>
+
+        <article class="show-row">
+          <p class="show-date"><span>DEC</span>21</p>
+          <div class="show-city">
+            <p>SATURDAY / 10PM</p>
+            <h3>Melbourne</h3>
+          </div>
+          <p class="show-venue">New Guernica<br>CBD</p>
+          <a class="circle-link" href="#tickets" aria-label="Buy tickets for Melbourne">↗</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Venue photography and atmosphere -->
+    <section class="experience" id="experience" aria-labelledby="experience-title">
+      <div class="experience-lead">
+        <img src="images/events/venue-purple.webp" alt="Industrial venue illuminated by violet and blue lighting" width="1200" height="900">
+        <div class="experience-copy">
+          <p class="section-number">04 / THE EXPERIENCE</p>
+          <h2 id="experience-title">Inside the<br>venue.</h2>
+          <p>Dark rooms, strong lighting and a crowd focused on the music. The visual direction uses supplied event photography to show the atmosphere of each Elektrik Eel night.</p>
+        </div>
+      </div>
+
+      <div class="gallery" aria-label="Festival atmosphere gallery">
+        <figure class="gallery-item gallery-tall">
+          <img src="images/events/portrait-motion.webp" alt="Abstract blurred portrait in red and blue light" width="800" height="1200">
+        </figure>
+        <figure class="gallery-item">
+          <img src="images/events/crowd-orange.webp" alt="Festival crowd beneath orange and blue laser lights" width="900" height="1200">
+        </figure>
+        <figure class="gallery-item">
+          <img src="images/events/crowd-red.webp" alt="Club crowd in saturated red light" width="1200" height="800">
+        </figure>
+        <figure class="gallery-item">
+          <img src="images/events/stairwell.webp" alt="People walking through a red and blue illuminated stairwell" width="1200" height="800">
+        </figure>
+      </div>
+    </section>
+
+    <!-- Interactive ticket enquiry form -->
+    <section class="tickets section-pad" id="tickets" aria-labelledby="tickets-title">
+      <div class="ticket-copy">
+        <p class="section-number">05 / TICKETS</p>
+        <h2 id="tickets-title">Get tickets.</h2>
+        <p>Choose a city and ticket type below. This form is included as the interactive input component required for the assessment.</p>
+        <div class="price-lockup">
+          <span>FROM</span>
+          <strong>$129</strong>
+          <small>EARLY BIRD<br>$159 AT THE DOOR</small>
+        </div>
+      </div>
+
+      <form class="ticket-form" action="#" method="get">
+        <div class="field-group">
+          <label for="city">Choose a city</label>
+          <select id="city" name="city" required>
+            <option value="" selected disabled>Select show</option>
+            <option value="brisbane">Brisbane - Dec 19</option>
+            <option value="sydney">Sydney - Dec 20</option>
+            <option value="melbourne">Melbourne - Dec 21</option>
+          </select>
+        </div>
+
+        <div class="field-row">
+          <div class="field-group">
+            <label for="name">Full name</label>
+            <input id="name" name="name" type="text" placeholder="Your name" required>
+          </div>
+          <div class="field-group">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required>
+          </div>
+        </div>
+
+        <fieldset class="ticket-type">
+          <legend>Ticket type</legend>
+          <label class="radio-card">
+            <input type="radio" name="ticket" value="early-bird" checked>
+            <span><strong>Early bird</strong><small>Online allocation</small></span>
+            <b>$129</b>
+          </label>
+          <label class="radio-card">
+            <input type="radio" name="ticket" value="door">
+            <span><strong>At the door</strong><small>Subject to capacity</small></span>
+            <b>$159</b>
+          </label>
+        </fieldset>
+
+        <button class="button button-primary form-button" type="submit">Continue to tickets <span aria-hidden="true">↗</span></button>
+        <p class="form-note">Demo interaction for assessment purposes. No payment is processed.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-top">
+      <p class="footer-logo">ELEKTRIK<br>EEL.</p>
+      <p>3 nights of premiere artistry<br>and hypnotic craftsmanship.</p>
+      <div class="footer-links">
+        <a href="#artists">Lineup</a>
+        <a href="#shows">Nights</a>
+        <a href="#experience">Venue</a>
+        <a href="#tickets">Tickets</a>
+      </div>
+      <div class="social-links" aria-label="Social media links">
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="Facebook">FB</a>
+        <a href="#" aria-label="SoundCloud">SC</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 ELEKTRIK EEL FESTIVAL</span>
+      <span>BRISBANE / SYDNEY / MELBOURNE</span>
+      <a href="#home">BACK TO TOP ↑</a>
+    </div>
+  </footer>
+</body>
+</html>
