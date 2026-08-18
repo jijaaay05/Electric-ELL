@@ -1,0 +1,439 @@
+/* ELEKTRIK EEL FESTIVAL - DIG103 */
+
+/* Basic page setup */
+* {
+  box-sizing: border-box;
+}
+/* Makes page links scroll smoothly */
+
+html {
+  scroll-behavior: smooth;
+}
+/* Main page style */
+
+body {
+  margin: 0;
+  background: #050608;
+  color: white;
+  font-family: "Archivo", Arial, sans-serif;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+a {
+  color: white;
+}
+
+main,
+header,
+footer {
+  max-width: 1280px;
+  margin: auto;
+}
+
+/* Navigation */
+/* Navigation/header style */
+header {
+  height: 70px;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #050608;
+  border-bottom: 1px solid #252525;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 900;
+  text-decoration: none;
+}
+/* Navigation links */
+
+nav {
+  display: flex;
+  gap: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 13px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #18eab5;
+}
+
+/* Hero */
+/* Main hero section */
+.hero {
+  min-height: 610px;
+  padding: 50px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  background:
+    linear-gradient(90deg, rgba(0,0,0,0.75), rgba(0,0,0,0.15), rgba(0,0,0,0.85)),
+    url("images/hero.jpg") center / cover;
+}
+
+.hero-text {
+  width: 70%;
+}
+
+.hero-text > p:first-child,
+.green-label,
+.lineup > p:first-child,
+.section-title > p,
+.show-card > p:first-child {
+  color: #18eab5;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.hero h1 {
+  margin: 10px 0 30px;
+  font-size: 110px;
+  line-height: 0.78;
+  letter-spacing: -8px;
+}
+
+.hero h1 span {
+  color: #18eab5;
+}
+
+.main-button {
+  display: inline-block;
+  padding: 16px 24px;
+  background: #18eab5;
+  color: #04110e;
+  text-decoration: none;
+  font-weight: 900;
+  transition: 0.3s;
+}
+
+.main-button:hover {
+  transform: translateY(-4px);
+}
+
+.small-text {
+  font-size: 12px;
+  color: #bbbbbb;
+}
+
+.lineup {
+  width: 270px;
+  padding: 25px;
+  background: rgba(0,0,0,0.65);
+}
+
+.lineup h2 {
+  margin: 6px 0;
+  font-size: 21px;
+  text-transform: uppercase;
+}
+
+/* Shows */
+.shows,
+.artists,
+.genres,
+.tickets {
+  padding: 90px 40px;
+}
+
+.section-title h2,
+.big-heading,
+.genre-text h2,
+.ticket-info h2 {
+  margin: 8px 0 40px;
+  font-size: 65px;
+  line-height: 0.9;
+  letter-spacing: -4px;
+}
+
+.show-grid {
+  display: flex;
+  gap: 15px;
+}
+
+.show-card {
+  width: 33.33%;
+  min-height: 220px;
+  padding: 25px;
+  background: #151923;
+  border-top: 3px solid #18eab5;
+  transition: 0.3s;
+/* Changes the item when the mouse is over it */
+}
+
+.show-card:hover {
+  transform: translateY(-5px);
+}
+
+.show-card h3 {
+  font-size: 30px;
+  margin: 10px 0;
+}
+
+.show-card a {
+  color: #18eab5;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* Artists */
+.artists {
+  background: #10131a;
+}
+
+.artist-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.artist-card {
+  width: calc(20% - 8px);
+  background: #050608;
+  overflow: hidden;
+}
+
+.artist-card img {
+  height: 290px;
+  object-fit: cover;
+  transition: 0.3s;
+}
+
+.artist-card:hover img {
+  transform: scale(1.04);
+}
+
+.artist-card h3,
+.artist-card p {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.artist-card h3 {
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+.artist-card p {
+  margin-top: 5px;
+  color: #18eab5;
+}
+
+/* Genres */
+.genres {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+
+.genre-image,
+.genre-text {
+  width: 50%;
+}
+
+.genre-image img {
+  height: 520px;
+  object-fit: cover;
+}
+
+.genre-text > p:not(.green-label) {
+  line-height: 1.7;
+  color: #c5c5c5;
+}
+
+.genre-list {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.genre-list span {
+  padding: 10px 14px;
+  border: 1px solid #18eab5;
+  color: #18eab5;
+}
+
+/* Tickets */
+.tickets {
+  display: flex;
+  gap: 60px;
+  background: #18eab5;
+  color: #03110d;
+}
+
+.ticket-info,
+.tickets form {
+  width: 50%;
+}
+
+.tickets .green-label {
+  color: #03110d;
+}
+
+.ticket-info img {
+  margin-top: 30px;
+  height: 230px;
+  object-fit: cover;
+}
+
+form {
+  padding: 30px;
+  background: #050608;
+  color: white;
+}
+
+label {
+  display: block;
+  margin: 18px 0 7px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #555;
+  background: #12151b;
+  color: white;
+  font-family: inherit;
+}
+
+form button {
+  width: 100%;
+  margin-top: 25px;
+  padding: 15px;
+  border: 0;
+  background: #18eab5;
+  font-weight: 900;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background: white;
+}
+
+/* Footer */
+footer {
+  padding: 25px 40px;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #252525;
+  font-size: 12px;
+}
+
+/* Tablet */
+/* Changes the layout for smaller screens */
+@media (max-width: 900px) {
+  header {
+    height: auto;
+    padding: 18px 25px;
+  }
+
+  nav {
+    gap: 15px;
+  }
+
+  .hero {
+    padding: 35px;
+  }
+
+  .hero h1 {
+    font-size: 80px;
+  }
+
+  .hero-text {
+    width: 60%;
+  }
+
+  .show-grid {
+    flex-wrap: wrap;
+  }
+
+  .show-card {
+    width: 100%;
+  }
+
+  .artist-card {
+    width: calc(50% - 5px);
+  }
+
+  .genres,
+  .tickets {
+    flex-direction: column;
+  }
+
+  .genre-image,
+  .genre-text,
+  .ticket-info,
+  .tickets form {
+    width: 100%;
+  }
+}
+
+/* Phone */
+@media (max-width: 600px) {
+  header {
+    display: block;
+  }
+
+  nav {
+    margin-top: 15px;
+    flex-wrap: wrap;
+  }
+
+  .hero {
+    min-height: 720px;
+    padding: 25px;
+    display: block;
+  }
+
+  .hero-text {
+    width: 100%;
+    padding-top: 140px;
+  }
+
+  .hero h1 {
+    font-size: 62px;
+    letter-spacing: -5px;
+  }
+
+  .lineup {
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  .shows,
+  .artists,
+  .genres,
+  .tickets {
+    padding: 65px 20px;
+  }
+
+  .section-title h2,
+  .big-heading,
+  .genre-text h2,
+  .ticket-info h2 {
+    font-size: 45px;
+    letter-spacing: -3px;
+  }
+
+  .artist-card {
+    width: 100%;
+  }
+
+  footer {
+    display: block;
+    padding: 25px 20px;
+  }
+}
