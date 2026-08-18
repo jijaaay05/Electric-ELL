@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Information about the webpage -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elektrik Eel Festival</title>
+
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700;900&display=swap" rel="stylesheet">
+
+  <!-- My CSS file -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Everything visible on the webpage starts here -->
+
+  <!-- Navigation -->
+  <!-- Top navigation area -->
+<header>
+    <a class="logo" href="#home">EE.</a>
+
+    <!-- Links to different parts of the page -->
+    <nav>
+      <a href="#lineup">Lineup</a>
+      <a href="#shows">Shows</a>
+      <a href="#genres">Genres</a>
+      <a href="#tickets">Tickets</a>
+    </nav>
+  </header>
+
+  <!-- Main website content -->
+  <main>
+
+    <!-- Hero section -->
+  <!-- Hero area and main festival introduction -->
+    <section class="hero" id="home">
+      <div class="hero-text">
+        <p>3 NIGHTS OF PREMIERE ARTISTRY AND HYPNOTIC CRAFTSMANSHIP</p>
+
+        <h1>ELEKTRIK<br><span>EEL.</span></h1>
+
+        <a class="main-button" href="#tickets">BUY EARLY-BIRD TICKETS →</a>
+        <p class="small-text">$129 EARLY BIRD · $159 AT THE DOOR</p>
+      </div>
+
+      <div class="lineup" id="lineup">
+        <p>UPCOMING ARTISTS</p>
+        <h2>Richie Hawtin</h2>
+        <h2>Robert Hood</h2>
+        <h2>Surgeon</h2>
+        <h2>Oscar Mulero</h2>
+        <h2>Robag Wruhme</h2>
+      </div>
+    </section>
+
+    <!-- Shows -->
+    <section class="shows" id="shows">
+      <div class="section-title">
+        <p>01 · SHOWS</p>
+        <h2>Three cities.<br>Three nights.</h2>
+      </div>
+
+      <div class="show-grid">
+        <div class="show-card">
+          <p>DEC 19</p>
+          <h3>BRISBANE</h3>
+          <p>The Family, Fortitude Valley</p>
+          <p>Starts 10pm</p>
+          <a href="#tickets">BUY TICKETS →</a>
+        </div>
+
+        <div class="show-card">
+          <p>DEC 20</p>
+          <h3>SYDNEY</h3>
+          <p>S.A.S.H, CBD</p>
+          <p>Starts 10pm</p>
+          <a href="#tickets">BUY TICKETS →</a>
+        </div>
+
+        <div class="show-card">
+          <p>DEC 21</p>
+          <h3>MELBOURNE</h3>
+          <p>New Guernica, CBD</p>
+          <p>Starts 10pm</p>
+          <a href="#tickets">BUY TICKETS →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Artists -->
+    <section class="artists">
+      <p class="green-label">02 · ARTISTS</p>
+      <h2 class="big-heading">PREMIUM<br>UNDERGROUND.</h2>
+
+      <div class="artist-grid">
+        <div class="artist-card">
+          <img src="images/richie.jpg" alt="Richie Hawtin">
+          <h3>Richie Hawtin</h3>
+          <p>Canada</p>
+        </div>
+
+        <div class="artist-card">
+          <img src="images/robert.jpg" alt="Robert Hood">
+          <h3>Robert Hood</h3>
+          <p>USA</p>
+        </div>
+
+        <div class="artist-card">
+          <img src="images/surgeon.jpg" alt="Surgeon">
+          <h3>Surgeon</h3>
+          <p>UK</p>
+        </div>
+
+        <div class="artist-card">
+          <img src="images/oscar.jpg" alt="Oscar Mulero">
+          <h3>Oscar Mulero</h3>
+          <p>Spain</p>
+        </div>
+
+        <div class="artist-card">
+          <img src="images/robag.jpg" alt="Robag Wruhme">
+          <h3>Robag Wruhme</h3>
+          <p>Germany</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Genres and atmosphere -->
+    <section class="genres" id="genres">
+      <div class="genre-image">
+        <img src="images/venue.jpg" alt="Underground electronic music venue">
+      </div>
+
+      <div class="genre-text">
+        <p class="green-label">03 · SOUND</p>
+        <h2>BUILT FOR<br>THE NIGHT.</h2>
+        <p>Elektrik Eel is a high-end event focused on premium underground house music and electronic artists.</p>
+
+        <div class="genre-list">
+          <span>Acid house</span>
+          <span>Chicago house</span>
+          <span>Deep house</span>
+          <span>Tribal house</span>
+          <span>Dark electro</span>
+          <span>Industrial</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ticket form -->
+  <!-- Ticket form for the user -->
+    <section class="tickets" id="tickets">
+      <div class="ticket-info">
+        <p class="green-label">04 · TICKETS</p>
+        <h2>JOIN THE<br>NIGHT.</h2>
+        <p>Early-bird tickets are $129. Tickets at the door are $159.</p>
+        <img src="images/crowd.jpg" alt="Elektrik Eel festival crowd">
+      </div>
+      <!-- Form inputs for ticket details -->
+
+      <form>
+        <label for="city">Choose a show</label>
+        <select id="city">
+          <option>Brisbane — Dec 19</option>
+          <option>Sydney — Dec 20</option>
+          <option>Melbourne — Dec 21</option>
+        </select>
+
+        <label for="name">Full name</label>
+        <input type="text" id="name" placeholder="Your name">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Your email">
+
+        <button type="submit">REGISTER INTEREST →</button>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- Bottom of the website -->
+  <footer>
+    <p>EE / ELEKTRIK EEL FESTIVAL</p>
+    <p>BRISBANE · SYDNEY · MELBOURNE</p>
+  </footer>
+
+</body>
+</html>
