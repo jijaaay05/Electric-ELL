@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Elektrik Eel Festival artist lineup">
+  <meta name="author" content="Jhon Cris Jimenez">
+  <title>Artists | Elektrik Eel Festival</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <a class="brand" href="index.html">EE.</a>
+
+    <!-- Mobile hamburger menu -->
+    <button class="menu-button" type="button">☰ Menu</button>
+
+    <nav class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="artists.html">Artists</a>
+      <a href="about.html">About</a>
+      <a href="index.html#tickets">Tickets</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Artist page heading -->
+    <section class="lineup-page-heading">
+      <p class="section-label">ELEKTRIK EEL</p>
+      <h1>THE LINEUP.</h1>
+      <p>International and national artists locked in for this year's show.</p>
+    </section>
+
+    <!-- All 12 supplied artist images -->
+    <section class="lineup-page-grid">
+
+      <article class="lineup-card">
+        <a href="images/official_artists/artist_01.jpg" class="artist-link">
+          <img src="images/official_artists/artist_01.jpg" alt="Jock Boyd (AU)">
+        </a>
+        <p>Jock Boyd (AU)</p>
+      </article>
+      <article class="lineup-card">
+        <a href="images/official_artists/artist_02.jpg" class="artist-link">
+          <img src="images/official_artists/artist_02.jpg" alt="Peter McKinnon (EU)">
+        </a>
+        <p>Peter McKinnon (EU)</p>
+      </article>
+      <article class="lineup-card">
+        <a href="images/official_artists/artist_03.jpg" class="artist-link">
+          <img src="images/official_artists/artist_03.jpg" alt="Boris Brejcha (NE)">
+        </a>
+        <p>Boris Brejcha (NE)</p>
+      </article>
+      <article class="lineup-card">
+        <a href="images/official_artists/artist_04.jpg" class="artist-link">
+          <img src="images/official_artists/artist_04.jpg" alt="DJ Muller (BR)">
+        </a>
+        <p>DJ Muller (BR)</p>
+      </article>
+      <article class="lineup-card">
+        <a href="images/official_artists/artist_05.jpg" class="artist-link">
+          <img src="images/official_artists/artist_05.jpg" alt="DJ Rekab (UK)">
+        </a>
+        <p>DJ Rekab (UK)</p>
+      </article>
+      <article class="lineup-card">
+        <a href="images/official_artists/artist_06.jpg" class="artist-link">
+          <img src="images/official_artists/artist_06.jpg" alt="Emperors (AU)">
+        </a>
+        <p>Emperors (AU)</p>
+      </article>
+      <article class="lineup-card">
+        <a href="images/official_artists/artist_07.jpg" class="artist-link">
+          <img src="images/official_artists/artist_07.jpg" alt="The Chevelles (AU)">
+        </a>
+        <p>The Chevelles (AU)</p>
+      </article>
+      <article class="lineup-card">
+        <a href="images/official_artists/artist_08.jpg" class="artist-link">
+          <img src="images/official_artists/artist_08.jpg" alt="Coerce (AU)">
+        </a>
+        <p>Coerce (AU)</p>
+      </article>
+      <article class="lineup-card">
+        <a href="images/official_artists/artist_09.jpg" class="artist-link">
+          <img src="images/official_artists/artist_09.jpg" alt="Femme Fatales (AU)">
+        </a>
+        <p>Femme Fatales (AU)</p>
+      </article>
+      <article class="lineup-card">
+        <a href="images/official_artists/artist_10.jpg" class="artist-link">
+          <img src="images/official_artists/artist_10.jpg" alt="Hawks of Alba (AU)">
+        </a>
+        <p>Hawks of Alba (AU)</p>
+      </article>
+      <article class="lineup-card">
+        <a href="images/official_artists/artist_11.jpg" class="artist-link">
+          <img src="images/official_artists/artist_11.jpg" alt="The Thieves (AU)">
+        </a>
+        <p>The Thieves (AU)</p>
+      </article>
+      <article class="lineup-card">
+        <a href="images/official_artists/artist_12.jpg" class="artist-link">
+          <img src="images/official_artists/artist_12.jpg" alt="Aforemention (FR)">
+        </a>
+        <p>Aforemention (FR)</p>
+      </article>
+    </section>
+
+    <!-- Lightbox opens when an artist image is clicked -->
+    <div id="artist-lightbox">
+      <button id="close-lightbox" type="button">×</button>
+      <img id="lightbox-image" src="" alt="Selected artist">
+      <p id="lightbox-name"></p>
+    </div>
+
+    <!-- Scroll to top button -->
+    <button id="top-button" type="button">↑ TOP</button>
+
+  </main>
+
+  <footer>
+    <span>EE / ELEKTRIK EEL</span>
+    <span>2026</span>
+  </footer>
+
+  <!-- jQuery library -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+  <!-- My jQuery code -->
+  <script src="artist/script.js"></script>
+
+</body>
+</html>

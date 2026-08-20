@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="About Elektrik Eel Festival">
+  <meta name="author" content="Jhon Cris Jimenez">
+  <title>About | Elektrik Eel Festival</title>
+
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Shared stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <a class="brand" href="index.html">EE.</a>
+
+    <!-- Mobile menu button -->
+    <button class="menu-button" type="button">☰ Menu</button>
+
+    <!-- Main navigation -->
+    <nav class="site-nav">
+      <a href="artists.html">Artists</a>
+      <a href="index.html">Home</a>
+      <a href="index.html#lineup">Lineup</a>
+      <a href="index.html#nights">Nights</a>
+      <a href="about.html" class="active-link">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- About hero -->
+    <section class="about-hero">
+      <div class="about-hero-text">
+        <p class="section-label">ABOUT ELEKTRIK EEL</p>
+        <h1>Music first.<br>Always.</h1>
+        <p>
+          Elektrik Eel is an electronic music festival built around underground sound,
+          strong visual identity and memorable spaces.
+        </p>
+      </div>
+
+      <img src="images/other/hero.jpg" alt="Elektrik Eel festival atmosphere">
+    </section>
+
+    <!-- Festival story -->
+    <section class="about-story">
+      <div>
+        <p class="section-label">01 · THE FESTIVAL</p>
+        <h2>A different kind of electronic festival.</h2>
+      </div>
+
+      <div>
+        <p>
+          The festival brings together electronic artists and audiences in a setting
+          designed around music, lighting, atmosphere and the experience of being there.
+        </p>
+        <p>
+          The About page keeps the same visual style as the homepage while changing
+          its layout for desktop, tablet and mobile screens.
+        </p>
+      </div>
+    </section>
+
+    <!-- Image gallery -->
+    <section class="about-gallery">
+      <img src="images/artists/robag.jpg" alt="Festival crowd">
+      <img src="images/artists/robert.jpg" alt="Festival lighting">
+      <img src="images/artists/oscar.jpg" alt="Elektrik Eel artist">
+    </section>
+
+    <!-- Festival values -->
+    <section class="values-section">
+      <p class="section-label">02 · WHAT MATTERS</p>
+
+      <div class="value-grid">
+        <div class="value-card">
+          <h3>Sound</h3>
+          <p>Electronic music and artists with a strong individual sound.</p>
+        </div>
+
+        <div class="value-card">
+          <h3>Space</h3>
+          <p>The venue and stage design are part of the festival experience.</p>
+        </div>
+
+        <div class="value-card">
+          <h3>People</h3>
+          <p>The website is designed around the audience and simple navigation.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- User input area -->
+    <section class="contact-section" id="contact">
+      <div>
+        <p class="section-label">03 · CONTACT</p>
+        <h2>Stay connected.</h2>
+        <p>Send a question or sign up for festival updates.</p>
+      </div>
+
+      <form class="contact-form">
+        <label for="contact-name">Name</label>
+        <input id="contact-name" type="text" placeholder="Your name">
+
+        <label for="contact-email">Email</label>
+        <input id="contact-email" type="email" placeholder="you@example.com">
+
+        <label for="message">Message</label>
+        <textarea id="message" rows="5" placeholder="Write your message"></textarea>
+
+        <button type="submit">SEND MESSAGE →</button>
+      </form>
+    </section>
+
+    <!-- Scroll to top button -->
+    <button id="top-button" type="button">↑ TOP</button>
+
+  </main>
+
+  <footer>
+    <span>EE / ELEKTRIK EEL</span>
+    <span>2026</span>
+  </footer>
+
+  <!-- jQuery library -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+  <!-- My jQuery code -->
+  <script src="artist/script.js"></script>
+
+</body>
+</html>
