@@ -16,7 +16,3 @@ Features:
 - Contact form
 - Simple comments in the code
 
-IMPORTANT:
-Your brief says all supplied Assessment 3 text and all artist images must be included.
-This build uses the current project assets. Upload the official Assessment 3 Assets ZIP
-so the About page can be updated to the exact required text and images before submission.
